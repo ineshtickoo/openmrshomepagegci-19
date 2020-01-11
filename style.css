@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+* {
+  /*border: 0.5px solid #c1c1c1;*/
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+}
+a {
+  color: #262626;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/*formatting the navbar*/
+#logo img {
+  padding-left: 30px;
+  width: 200px;
+}
+.undhover:hover {
+  background-color: rgb(247, 247, 247);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 2px;
+  font-size: larger;
+}
+
+button {
+  font-family: "Nunito", sans-serif;
+}
+nav a {
+  font-family: "Nunito", sans-serif;
+}
+nav {
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 5%;
+  width: 100%;
+}
+nav .buttons {
+  float: right;
+}
+.dropbtn {
+  background-color: #fff;
+  color: #262626;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #e6e6e6;
+}
+
+/*formatting the searchbar*/
+
+.searchbar {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.searchbar input[type="text"] {
+  margin: auto;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+.searchbar .searchbtn {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.searchbtn:hover {
+  background: #ccc;
+}
+
+/*formatting the body main*/
+#body {
+  display: flex;
+  flex-direction: column;
+}
+.banner1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+.item img {
+  width: 80%;
+}
+#b1 {
+  background-image: url("./circ.png");
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+.circle {
+  height: 50%;
+  width: 50%;
+  z-index: -1000;
+  background-color: #262626;
+}
+#text {
+  width: 50%;
+}
+#text h1 {
+  font-size: 30px;
+}
+#text p {
+  font-size: 24px;
+}
+
+/*formatting the doubleflex*/
+
+.doubleflex {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.tflex {
+  width: 40%;
+}
+.doubleflex h1,
+p {
+  margin-top: 5%;
+}
+
+.yt {
+}
+
+#footer {
+  margin-top: 20%;
+  padding: 2% 5%;
+  margin-top: 3%;
+  color: #bbbbf2;
+  background-color: #424299;
+}
+@media screen and (max-width: 900px) {
+  .banner1 {
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #photo {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  #text {
+    width: 100%;
+  }
+  #map {
+    margin-top: 5%;
+    width: 50vh;
+  }
+  #b1 {
+    background: none;
+  }
+  .doubleflex {
+    flex-direction: column;
+  }
+  .tflex {
+    width: 100%;
+    padding: 5%;
+  }
+  .yt {
+    width: 100%;
+  }
+}
+/*
+*/
