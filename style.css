@@ -166,10 +166,26 @@ p {
 
 #footer {
   margin-top: 20%;
-  padding: 2% 5%;
+
+  padding: 2% 6%;
+  padding-top: 6%;
   margin-top: 3%;
   color: #bbbbf2;
   background-color: #424299;
+}
+.foo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.foo ul {
+  margin-top: 2%;
+}
+.foo h3 {
+  color: aliceblue;
+}
+.foo a {
+  color: aliceblue;
 }
 @media screen and (max-width: 900px) {
   .banner1 {
@@ -202,6 +218,9 @@ p {
   }
   .yt {
     width: 100%;
+  }
+  #n1 {
+    margin-top: 5%;
   }
 }
 /*
